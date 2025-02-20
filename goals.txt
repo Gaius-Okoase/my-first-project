@@ -1,0 +1,7 @@
+#My programming goals: 
+
+i) To build modern softwares, websites and web applications.
+ii) To solve real life problems with programming languages.
+iii) To write useful, valid, and complex server side code that works seamleslly on the client side.
+iv) To bring about positive change to my community, the way programming helped change my life.
+
