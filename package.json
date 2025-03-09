@@ -9,6 +9,7 @@
     "start:week4:student": "node \"week4/Q1. Student Object/student.js\"",
     "start:week4:promise": "node \"week4/Q2. Promise Question/promise.js\"",
     "start:week4:hello": "node \"week4/Q3. Hello Node.Js/hello.js\"",
+    "start:week4:system": "node \"week4/Q4. System Information/system.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
