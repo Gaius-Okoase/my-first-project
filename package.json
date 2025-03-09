@@ -1,0 +1,22 @@
+{
+  "name": "projects",
+  "version": "1.0.0",
+  "description": "JavaScript Backend with M4ACE",
+  "main": "index.js",
+  "scripts": {
+    "start": "node week3/index.js",
+    "start:week3": "node week3/index.js",
+    "start:week4:student": "node \"week4/Q1. Student Object/student.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gaius-Okoase/Gaius-Assignment.git"
+  },
+  "author": "Gaius Okoase Oreoluwa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gaius-Okoase/Gaius-Assignment/issues"
+  },
+  "homepage": "https://github.com/Gaius-Okoase/Gaius-Assignment#readme"
+}
