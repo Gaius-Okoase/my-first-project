@@ -1,4 +1,4 @@
-/*Honestly, I don't fully understand callback, promise, async and await. I'll keep reading on it though. */
+/*Honestly, I don't fully understand callback, promise, async and await. I'll keep reading on it though.*/
 function getFullResponseFromAPI(success) {
     return new Promise((resolve, reject) => {
         if (success) {
