@@ -4,3 +4,5 @@ export default class ClassRoom {
     }
 }
 
+const classRoom1 = new ClassRoom(10);
+console.log(classRoom1._maxStudentSize);
