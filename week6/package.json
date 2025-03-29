@@ -4,6 +4,11 @@
   "description": "Week 6 Assignment Solution",
   "main": "index.js",
   "scripts": {
+    "start": "node \"Q1. Array of Numbers/index.js\"",
+    "start:week6:flat": "node \"Q2. Flatten Nested Array/index.js\"",
+    "start:week6:typed": "node \"Q3. Typed Array/index.js\"",
+    "start:week6:convert": "node \"Q4. Converting TypedArray/index.js\"",
+    "start:all": "npm run start && npm run start:week6:flat && npm run start:week6:typed && npm run start:week6:convert",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
