@@ -16,6 +16,7 @@
     "start:week6:flat": "node \"week6/Q2. Flatten Nested Array/index.js\"",
     "start:week6:typed": "node \"week6/Q3. Typed Array/index.js\"",
     "start:week6:convert": "node \"week6/Q4. Converting TypedArray/index.js\"",
+    "start:week7:dist": "node \"week7/dist/index.js\"",
     "start:all": "npm run start &&  npm run start:week3 &&  npm run start:week4:student &&  npm run start:week4:promise && npm run start:week4:hello && npm run start:week4:system && npm run start:week5 && npm run start:week6:flat && npm run start:week6:typed && npm run start:week6:convert",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
