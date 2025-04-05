@@ -1,4 +1,4 @@
-const os = require('os');
+import os from 'os';
 
 let systemInformation = {
     'Operating System': os.type(),

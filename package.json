@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "JavaScript Backend with M4ACE",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "node week3/index.js",
     "start:week3": "node week3/index.js",
@@ -10,6 +11,12 @@
     "start:week4:promise": "node \"week4/Q2. Promise Question/promise.js\"",
     "start:week4:hello": "node \"week4/Q3. Hello Node.Js/hello.js\"",
     "start:week4:system": "node \"week4/Q4. System Information/system.js\"",
+    "start:week5": "node week5/index.js",
+    "start:week6:array": "node \"week6/Q1. Array of Numbers/index.js\"",
+    "start:week6:flat": "node \"week6/Q2. Flatten Nested Array/index.js\"",
+    "start:week6:typed": "node \"week6/Q3. Typed Array/index.js\"",
+    "start:week6:convert": "node \"week6/Q4. Converting TypedArray/index.js\"",
+    "start:all": "npm run start &&  npm run start:week3 &&  npm run start:week4:student &&  npm run start:week4:promise && npm run start:week4:hello && npm run start:week4:system && npm run start:week5 && npm run start:week6:flat && npm run start:week6:typed && npm run start:week6:convert",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
