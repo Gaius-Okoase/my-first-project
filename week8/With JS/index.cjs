@@ -12,9 +12,11 @@ fs.mkdir ('Files', {recursive: true}, (err) => {
     }
 
     //* Creating the file and writing into it.
-    fs.writeFile('./Files.hello.txt', 'Hello, File System.', 'utf-8', (err) => {
+    fs.writeFile('./Files/hello.txt', 'Hello, File System.', 'utf-8', (err) => {
         if (err) throw err;
         console.log('File created and written into successfully!');
         return;
     }); 
 });
+
+//* 
