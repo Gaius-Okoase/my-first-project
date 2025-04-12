@@ -8,6 +8,8 @@ const student = {
     } 
 };
 console.log(student.greet());
+
+
 //Using Class Constructor
 class Student {
      constructor(ogName, age, ogLevel) {
