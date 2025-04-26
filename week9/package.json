@@ -1,0 +1,22 @@
+{
+  "name": "week9",
+  "version": "1.0.0",
+  "description": "Dir. containst examples of exporting and mporting modules using CommonJS syntax",
+  "main": "export_module.cjs",
+  "scripts": {
+    "start": "node export_module.cjs",
+    "start:import": "node ./import_module.cjs",
+    "start:all": "node export_module.cjs && node ./import_module.cjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gaius-Okoase/Gaius-Assignment.git"
+  },
+  "author": "Gaius Okoase Oreoluwa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gaius-Okoase/Gaius-Assignment/issues"
+  },
+  "homepage": "https://github.com/Gaius-Okoase/Gaius-Assignment#readme"
+}
