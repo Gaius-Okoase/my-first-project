@@ -13,7 +13,6 @@ app.use((req, res, next) => {
 }) 
 
 app.get('/', (req, res) => {
-    console.log(`Received request for ${req.url}`);
     res.send(`Hello, Express!`);
 });
 
@@ -43,7 +42,28 @@ app.get('/search', (req, res) => {
     });
 });
 
-
+//* Week 13 JSON response - JSON list of books
+const listOfBooks = [
+    {
+        book: "The Secret Life Of Baba Segi's Wives",
+        author: "Lola Shoneyin"
+    },
+    {
+        book: "Welcome To Lagos",
+        author: "Chibundu Onuzo"
+    },
+    {
+        book: "A Broken People's Playlist",
+        author: "Chimeka Garricks"
+    },
+    {
+        book: "Fine Boys",
+        author: "Imasuen Eghosa"
+    }
+];
+app.get('/list-of-books', (req, res) => {
+    return res.status(200).json({"List Of Books": listOfBooks});
+});
 
 //* Week 13 Middlewares - (b) Middleware to handle errors
 app.use((err, req, res, next) => {
