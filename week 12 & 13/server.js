@@ -43,6 +43,8 @@ app.get('/search', (req, res) => {
     });
 });
 
+
+
 //* Week 13 Middlewares - (b) Middleware to handle errors
 app.use((err, req, res, next) => {
     console.error('Error:', err);
