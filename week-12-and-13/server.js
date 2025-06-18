@@ -69,7 +69,6 @@ app.get('/list-of-books', (req, res) => {
 app.use((err, req, res, next) => {
     console.error('Error:', err);
     return res.status(500).json({error: "Sorry, something went wrong. Please try again."});
-    next();
 });
 
 app.listen(PORT, () => {
