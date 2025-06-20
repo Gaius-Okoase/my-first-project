@@ -2,6 +2,7 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import connectDb from './config/db.js';
+import userRouter from './routers/userRouter.js'
 
 // Instantiate express 
 const app = express();
@@ -20,6 +21,9 @@ app.use((req, res, next) => {
   console.log(`Received request for ${req.url} with ${req.method}`);
   next(); //* If you don't call next, your server won't move to the next step!
 });
+
+//Routers
+app.use('/', userRouter);
 
 // Set up port to listen to server 
 app.listen(PORT, () => {
