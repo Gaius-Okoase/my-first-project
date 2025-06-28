@@ -63,6 +63,32 @@ app.get('/cat-facts', async (req, res) => {
     }
 })
 
+//Logic to store user data
+app.post('/user', async (req, res) => {
+    try {
+        const {name, age, email} = req.body;
+        await client.hSet("user:2", {name, age, email});
+        return res.status(201).json({message: "User created successfully"});
+    } catch (error) {
+        console.error('Error creating user', error);
+        return res.status(500).json(error.message)
+    }
+}) 
+//Get user data
+app.get('/user/:id', async (req, res) => {
+    try {
+        const {id} = req.params
+        const user = await client.hGetAll(`user:${id}`);
+        if (!user) {
+            return res.status(404).json({error: "User does not exist"});
+        }
+        return res.status(200).json(user);
+    } catch (error) {
+        console.error('Error fetching user data', error);
+        return res.status(500).json({error: error.message});
+    }
+}) 
+
 //Set up PORT to listen to server
 app.listen(PORT, () => {
     console.log(`Server started on http://localhost:${PORT}`);
