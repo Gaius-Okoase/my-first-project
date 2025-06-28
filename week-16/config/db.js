@@ -1,4 +1,6 @@
 import { createClient } from 'redis';
+import dotenv from 'dotenv';
+dotenv.config();
 
 const client = createClient({
     username: process.env.REDIS_USERNAME,
@@ -15,9 +17,9 @@ if(!client.isOpen) {
     await client.connect();
 }
 
-await client.set('foo', 'bar');
-const result = await client.get('foo');
-console.log(result)  // >>> bar
+// await client.set('foo', 'bar');
+// const result = await client.get('foo');
+// console.log(result)  // >>> bar
 
 export default client;
 
